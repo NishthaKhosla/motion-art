@@ -1,0 +1,63 @@
+.mainn1 {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to next line */
+  justify-content: center; /* Center items horizontally */
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.feature {
+  flex: 1 1 300px; /* Set initial width and allow items to grow and shrink */
+  margin: 0 10px;
+  padding: 25px;
+ 
+  border-radius: 20px;
+  border: 2px solid #332C42;
+  background: linear-gradient(to bottom, #0E0720, #251E35);
+  box-sizing: border-box;
+  margin-left:0px;
+  align-items:flex-start;
+  margin-bottom:5px;
+   /* Set maximum width to prevent items from becoming too wide */
+}
+
+
+
+
+
+
+.img3 {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  margin-left: 0px;
+}
+
+.pp1 {
+  font-size: 23px;
+  margin-bottom: 5px;
+  color: #EEE5FF;
+  font-family: "Sora", Sans-serif;
+  font-weight: 500;
+}
+
+.pp2 {
+  font-size: 18px;
+  color: #EEE5FFBD;
+  font-family: "Outfit", Sans-serif;
+}
+
+@media (max-width: 768px) {
+  .feature {
+    flex-basis: calc(50% - 10px); /* Set initial width to 50% with spacing */
+    margin: 7px; /* Add spacing between items */
+    margin-bottom:5px;
+   
+  }
+
+  .mainn1{
+    margin-top:3px;
+  }
+}
+
+  

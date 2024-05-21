@@ -1,0 +1,125 @@
+
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 45px;
+  margin-top: 100px;
+  font-family: "Sora", Sans-serif;
+  font-weight: 500;
+}
+
+
+.left {
+  margin-bottom: 20px; /* Add some space between left and right sections */
+}
+
+.right {
+  flex: 2;
+  text-align: left;
+  margin-left: 0; /* Remove negative margin */
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align items to the start (top) */
+}
+
+.p1, .p2 {
+  font-size: 20px; /* Adjust font size as needed */
+  background:  linear-gradient(90deg, #F87516 15%, #5E11FF 50%); /* Gradient from orange to pink to purple to blue */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; /* Make text color transparent to show the gradient */
+  width: 30%; /* Adjust width to full */
+  margin-left: 30%;
+}
+
+.p2 {
+  color: #EEE5FF;
+  margin-top: -2px;
+}
+
+.p3 {
+  font-size: 35px; /* Smaller font size for better readability on small screens */
+  width: 100%;
+  color: #EEE5FF;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: "Sora", Sans-serif;
+  font-weight: 500;
+  line-height: 60px
+}
+
+.p4 {
+  font-size: 35px; /* Smaller font size for better readability on small screens */
+  width: 100%;
+  background: linear-gradient(90deg, #F87516 10%, #5E11FF 30%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: "Sora", Sans-serif;
+  font-weight: 500;
+  line-height: 60px
+}
+
+.p5 {
+  font-size: 18px;
+  font-family: "Outfit", Sans-serif;
+  width: 100%;
+  color: #ABA5BB;
+  margin-top: 0;
+}
+
+.right p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 0;
+}
+
+/* Media Queries for responsiveness */
+@media (min-width: 768px) {
+  .intro-container {
+    flex-direction: row; /* Change to row layout on larger screens */
+    
+  }
+
+  .left {
+    flex: 1;
+    margin-bottom: 0; /* Remove bottom margin */
+    margin-left:-150px;
+  }
+
+  .right {
+    margin-left: -10px; /* Adjust margin for larger screens */
+  }
+
+  .p1, .p2 {
+    width: 30%;
+  }
+
+  .p3 {
+    font-size: 55px;
+    width: 62%;
+  }
+
+  .p4 {
+    font-size: 55px;
+    width: 70%;
+  }
+
+  .p5 {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .intro-container {
+    margin-left: 45px;
+    margin-top: 100px;
+  }
+}
+
+
+
